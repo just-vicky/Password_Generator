@@ -24,14 +24,13 @@ function generate(){
   secondPass.textContent = password2
 }
 
-// function generate2(){
-//   let password = ""
-//   for(let i = 0; i < passwordLength; i++){
-//     console.log(i);
-//     console.log(randomChar());
-//     password += randomChar()
-//   }
-//   return secondPass.textContent = password
-// }
+function clearText() {
+  password = " "
+  firstPass.textContent = password
+  secondPass.textContent = password
+  console.log(firstPass.textContent)
+}
+
+
 
 
