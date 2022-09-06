@@ -33,7 +33,7 @@ function clearText() {
 
 
 function copyPass1() {
-  var copyPass = document.getElementById("first-ps");
+  copyPass = document.getElementById("first-ps");
   copyPass.select();
   document.execCommand("copy");
   
