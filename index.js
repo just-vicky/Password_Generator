@@ -7,6 +7,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 let firstPass = document.getElementById("first-ps")
 let secondPass = document.getElementById("second-ps")
 let passwordLength = 15
+const btn = document.getElementById("btn")
 
 function randomChar() {
   let charactersNew = Math.floor(Math.random() * characters.length)
@@ -24,12 +25,12 @@ function generate(){
   secondPass.value = password2
 }
 
-function clearText() {
-  password = " "
-  firstPass.textContent = password
-  secondPass.textContent = password
-  console.log(firstPass.textContent)
-}
+// function clearText() {
+//   password = ""
+//   firstPass.value = password
+//   secondPass.value = password
+  
+// }
 
 
 function copyPass1() {
@@ -40,8 +41,13 @@ function copyPass1() {
 }
 
 function copyPass2() {
-  var copyPass = document.getElementById("second-ps");
+  copyPass = document.getElementById("second-ps");
   copyPass.select();
   document.execCommand("copy");
   
 }
+
+btn.addEventListener('click', () =>{
+  firstPass.value = " ";
+  secondPass.value = " ";
+})
