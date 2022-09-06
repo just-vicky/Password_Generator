@@ -20,8 +20,8 @@ function generate(){
     password1 += randomChar()
     password2 += randomChar()
     }
-  firstPass.textContent = password1
-  secondPass.textContent = password2
+  firstPass.value= password1
+  secondPass.value = password2
 }
 
 function clearText() {
@@ -32,5 +32,16 @@ function clearText() {
 }
 
 
+function copyPass1() {
+  var copyPass = document.getElementById("first-ps");
+  copyPass.select();
+  document.execCommand("copy");
+  
+}
 
-
+function copyPass2() {
+  var copyPass = document.getElementById("second-ps");
+  copyPass.select();
+  document.execCommand("copy");
+  
+}

@@ -11,13 +11,21 @@
           <hr class="border-gray-600">
           </hr>
           <div class="mt-8 flex justify-around">
-            <p id="first-ps" class="bg-gray-600 rounded-lg h-8 w-64 text-center text-white text-xl"></p>
-            <p id="second-ps" class="bg-gray-600 rounded-lg h-8 w-64 text-center text-white text-xl"></p>
+            <input type="text"  id="first-ps" class="bg-gray-600 rounded-lg h-8 w-64 text-center text-white text-xl">
+            <input type="text"  id="second-ps" class="bg-gray-600 rounded-lg h-8 w-64 text-center text-white text-xl">
+          </div>
+          <div class="flex justify-around">
+            <button class="text-white text-3xl bg-emerald-500 px-4 rounded-lg my-8" onclick="copyPass1()">Copy</button>
+            <button class="text-white text-3xl bg-emerald-500 px-4 rounded-lg my-8" onclick="copyPass2()">Copy</button>
           </div>
           <div class="flex justify-center">
             <button class="text-white text-3xl bg-emerald-500 px-4 rounded-lg my-8" onclick="clearText()">Reset</button>
           </div>
         </div>
+        <input type="text" class="form-control" name="myvalue"  id="myvalue" value="YEAH" readonly  />
+
+   <button class="btn btn-primary btn-block" onclick="copyToClipboard()">Copy myvalue</button>
+
         <script src="index.js"></script>
     </body>
 </html>
